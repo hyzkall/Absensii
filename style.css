@@ -1,0 +1,496 @@
+/* CSS file: style.css */
+
+/* Latar belakang dengan gradiasi hijau-hitam */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f9d58, #2c436775); /* Gradasi hijau ke hitam */
+    color: rgba(20, 98, 8, 0.538);
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Card tampilan statistik */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Transparan */
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #0f9d58; /* Hijau terang */
+}
+
+.card p {
+    font-size: 24px;
+}
+
+/* Bagian pengumuman */
+.announcement {
+    background: rgba(255, 255, 255, 0.1); /* Transparan */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Menu utama berbaris ke samping */
+.menu {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Memusatkan menu */
+    gap: 40px; /* Memberikan jarak antar item menu */
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center; /* Memastikan list menu tetap rata */
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #0f9d58; /* Warna hijau */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; /* Jarak antara teks dan box */
+    font-size: 16px; /* Ukuran font label */
+    position: relative;
+    z-index: 2; /* Pastikan teks berada di atas */
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk teks */
+}
+
+.menu ul li .box {
+    background: white; /* Warna background putih untuk kontras */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    transition: transform 0.2s ease;
+    width: 150px; /* Lebar tetap agar item menu seragam */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li:hover .box {
+    transform: scale(1.05); /* Animasi saat hover */
+}
+
+.menu ul li img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* Penyesuaian ukuran ikon */
+}
+
+/* Gaya dasar untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Mengatur gaya container utama */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+/* Gaya untuk judul halaman */
+h2 {
+    text-align: center;
+    color: #40871bc8;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Gaya untuk form */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input[type="text"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk tombol */
+.button-primary, .button-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 10px;
+}
+
+.button-primary {
+    background-color: #4CAF50;
+}
+
+.button-primary:hover {
+    background-color: #45a049;
+}
+
+.button-secondary {
+    background-color:#40871bc8;
+}
+
+.button-secondary:hover {
+    background-color: #40871bc8;
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Gaya untuk tombol Edit dan Hapus */
+.edit-btn, .hapus-btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background-color: #40871bc8;
+    color: white;
+}
+
+.hapus-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #40871bc8;
+}
+
+.hapus-btn:hover {
+    background-color: #e53935;
+}
+
+/* Gaya untuk tabel jadwal */
+.jadwal-table th, .jadwal-table td {
+    padding: 12px 15px;
+}
+
+.jadwal-table th {
+    background-color: #4CAF50;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table, tbody td, thead th {
+        font-size: 14px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .button-primary, .button-secondary {
+        width: 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #40871bc8;
+}
+
+.tambah-btn, .kembali-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.tambah-btn:hover, .kembali-btn:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #40871bc8;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.edit-btn {
+    color: #40871bc8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hapus-btn {
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit-btn:hover {
+    color: #40871bc8;
+}
+
+.hapus-btn:hover {
+    color: #c82333;
+}
+
+.no-data {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.kelas-btn {
+    background-color: #28a745; /* Warna hijau untuk tombol Kelas */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.edit-btn {
+    background-color:#40871bc8; /* Warna kuning untuk tombol Edit */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hapus-btn {
+    background-color: #dc3545; /* Warna merah untuk tombol Hapus */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.kelas-btn:hover, .edit-btn:hover, .hapus-btn:hover {
+    opacity: 0.8;
+}
+
+.tambah-btn {
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #40871bc8;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.kembali-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #28a745;
+}
+
+/* Style container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #40871bc8;
+    color: white;
+}
+
+table td {
+    background-color: #f0f0f0;
+}
+
+/* Form input styling */
+.date-picker label {
+    font-weight: bold;
+}
+
+.date-picker select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    background-color: #40871bc8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #40871bc8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table th, table td {
+        padding: 5px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
